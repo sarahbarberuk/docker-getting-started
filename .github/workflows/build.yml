@@ -1,21 +1,20 @@
-name: Build
-
 permissions:
   contents: read
   id-token: write
-  
-on: [push, pull_request, workflow_dispatch]
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
+
   build:
-    name: Build
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
-    - name: setup depot
-      uses: depot/setup-action@v1
-    - name: Build
-      uses: depot/build-push-action@v1
+    - uses: depot/setup-action@v1
+    - uses: depot/build-push-action@v1
       with:
-        project: jdh86508hh
+        project: zsn5vnsgv5
