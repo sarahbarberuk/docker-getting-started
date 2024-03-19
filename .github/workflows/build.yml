@@ -19,4 +19,3 @@ jobs:
       uses: depot/build-push-action@v1
       with:
       	project: zsn5vnsgv5
-        push: false
