@@ -8,6 +8,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
+    - name: setup depot
+      uses: depot/setup-action@v1
     - name: Build
       uses: depot/build-push-action@v1
       with:
