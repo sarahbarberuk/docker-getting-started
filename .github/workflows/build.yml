@@ -18,4 +18,4 @@ jobs:
     - name: Build
       uses: depot/build-push-action@v1
       with:
-      	project: zsn5vnsgv5
+        project: zsn5vnsgv5
